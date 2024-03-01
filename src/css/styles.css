@@ -1,0 +1,162 @@
+:root{
+    --bg-color: #e7e7e7;
+    --bg-container: #f9f9f9;
+    --bg-li: #e2e2e2;
+    --bg-form: #e2e2e2;
+    --addTaskBtn-color: #2979ea;
+    --addTaskBtn-color-hover: #3385f6;
+    --text-color: #222222;
+    --delTaskBtn-color: #ea2929;
+    --delTaskBtn-color-hover: #fe3d3d;
+}
+
+.darkTheme {
+    --bg-color: #181818;
+    --bg-container: #292727;
+    --bg-li: #363535;
+    --bg-form: #efefef;
+    --text-color: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body { 
+    display: grid;
+    place-content: center;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.principal-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    background-color: var(--bg-container);
+    border-radius: 15px;
+    text-align: center;
+    width: 600px;
+    padding-bottom: 1em;
+}
+
+.change-theme-btn {
+    cursor: pointer;
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    font-size: 3em;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.change-theme-btn i {
+    display: flex;
+}
+
+.row-input {
+    margin: 2em auto;
+    display: flex;
+    width: 70%;
+    border-radius: 1.7em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-form);
+}
+
+.userInput {
+    background-color: transparent;
+    width: 70%;
+    outline: none;
+    border: none;
+    margin-left: 2em;
+}
+
+.userButton {
+    width: 7em;
+    height: 4em;
+    outline: none;
+    border: none;
+    border-radius: 1.7em;
+    color: var(--bg-form);
+    background-color: var(--addTaskBtn-color);
+    cursor: pointer;
+}
+
+.userButton:hover {
+    background-color: var(--addTaskBtn-color-hover);
+}
+
+.h2-dont-have-tasks {
+    font-size: 1.1em;
+}
+
+.h2-your-tasks {
+    display: flex;
+    padding-left: 1em;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+ul li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: var(--bg-li);
+    height: 3em;
+    align-items: center;
+    padding-left: 3em;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 1.7em;
+    width: 1.7em;
+    background-image: url(/src/images/unchecked.svg);
+    background-size: cover;
+    background-position: center;
+    left: 0.5em;
+}
+
+ul li.checked {
+    color: #999;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(/src/images/checked.svg);
+}
+
+.delete-task-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 100%;
+    border-radius: 5px;
+    min-width: 3em;
+    color: var(--bg-form);
+    background-color: var(--delTaskBtn-color);
+}
+
+.delete-task-btn:hover {
+    background-color: var(--delTaskBtn-color-hover);
+}
