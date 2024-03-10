@@ -68,8 +68,8 @@ function toastifyTaskCreated()  {
         text: "Task created!",
         duration: 3000,
         close: true,
-        gravity: "bottom",
-        position: "right",
+        gravity: "top",
+        position: "left",
         stopOnFocus: true,
         style: {
             background: "linear-gradient(to right, #099921, #056c16)",
@@ -83,8 +83,8 @@ function toastifyTaskRemoved() {
         text: "Task removed!",
         duration: 3000,
         close: true,
-        gravity: "bottom",
-        position: "right",
+        gravity: "top",
+        position: "left",
         stopOnFocus: true,
         style: {
           background: "linear-gradient(to right, #c61414, #9b0707)",

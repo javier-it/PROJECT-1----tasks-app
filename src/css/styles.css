@@ -124,6 +124,7 @@ ul li {
     padding-left: 3em;
     cursor: pointer;
     position: relative;
+    word-break: break-all;
 }
 
 ul li::before {
@@ -160,3 +161,39 @@ ul li.checked::before {
 .delete-task-btn:hover {
     background-color: var(--delTaskBtn-color-hover);
 }
+
+
+
+
+@media (max-width: 600px) {
+    body { 
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .principal-container {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .row-input {
+        width: 95%;
+    }
+
+    .userButton {
+        height: 5em;
+    }
+
+    ul {
+        margin: 1em auto;
+        gap: 1.2em;
+    }
+
+    ul li {
+        height: 4em;
+    }
+
+    .delete-task-btn {
+       margin-left: 1em;
+    }
+  }
