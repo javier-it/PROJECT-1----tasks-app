@@ -1,21 +1,21 @@
 :root{
-    --bg-color: #e7e7e7;
-    --bg-container: #f9f9f9;
-    --bg-li: #e2e2e2;
-    --bg-form: #e2e2e2;
-    --addTaskBtn-color: #2979ea;
-    --addTaskBtn-color-hover: #3385f6;
-    --text-color: #222222;
-    --delTaskBtn-color: #ea2929;
-    --delTaskBtn-color-hover: #fe3d3d;
-}
-
-.darkTheme {
     --bg-color: #181818;
     --bg-container: #292727;
     --bg-li: #363535;
     --bg-form: #efefef;
     --text-color: #fafafa;
+    --addTaskBtn-color: #2979ea;
+    --addTaskBtn-color-hover: #3385f6;
+    --delTaskBtn-color: #ea2929;
+    --delTaskBtn-color-hover: #fe3d3d;
+}
+
+.darkTheme {
+    --bg-color: #e7e7e7;
+    --bg-container: #f9f9f9;
+    --bg-li: #e2e2e2;
+    --bg-form: #e2e2e2;
+    --text-color: #222222;
 }
 
 * {
